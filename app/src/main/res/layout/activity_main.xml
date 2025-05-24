@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- Imagen logo de la clínica -->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_doctor"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="Logo de la empresa"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--    Imagen del doctor-->
+
+    <ImageView
+        android:id="@+id/iv_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/doctor"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+        app:layout_constraintBottom_toTopOf="@+id/llbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- LinearLayout en la parte inferior -->
+    <LinearLayout
+        android:id="@+id/llbtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/item_fondo"
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/iv_doctor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn_comenzar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_start_bachground"
+            android:text="Ingresar"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="15dp"/>
+
+        <Button
+            android:id="@+id/btn_cerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/btn_other_background"
+            android:textSize="17sp"
+            android:paddingVertical="15dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="@string/texto_leyenda_inicio"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

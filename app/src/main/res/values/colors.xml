@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fondo_background">#28b463</color>
+    <color name="title_color">#FFFFFFFF</color>
+    <color name="btn_start_bachground">#186a3b</color>
+    <color name="btn_other_background">#ec7063</color>
+    <color name="navBar_background">#FFFFFFFF</color>
+
+    <color name="text_color_search">#797d7f</color>
+    <color name="color_icons">#515a5a</color>
+    <color name="color_star">#f1c40f</color>
+</resources>
