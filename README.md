@@ -1,5 +1,5 @@
 <h1>App movil de la Clínica Robles</h1>
-Nombre de la app: RoblesApp
+Nombre de la app: RoblesApp<br/>
 Programador: Quezada Chorres Cesar Alexander
 
 <h2>Vista de bienvenida</h2>
